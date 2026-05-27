@@ -11,6 +11,12 @@ pub struct QualityFilter {
     pub min_quality: f64,
 }
 
+impl Default for QualityFilter {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl QualityFilter {
     pub fn new() -> Self {
         Self {
